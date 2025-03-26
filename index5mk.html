@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Калкулатор за Датуми</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Калкулатор за датуми">
+    <meta name="keywords" content="пресметај, датуми">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="index5mk.css">
+    <script src="index5mk.js"></script>
+</head>
+
+<body>
+    <button onclick="window.location.href='https://steffeeee.github.io/Project-Date/indexmk.html'" class="top-left-btn">Назад</button>
+    
+    <div id="main-wrap" class="wrap">
+        <section>
+            <h1>Калкулатор за Датуми</h1>
+        </section>
+
+        <section>
+            <form action="/">
+
+                <div class="input-wrap">
+                    
+                    <label for="d1">
+                        <h2>Почетен датум</h2>
+                    </label>
+
+                    <input id="d1" name="d1" placeholder="На пр. Денес, 31.12.2025, Мај 1, 2025" value="" />
+                </div>
+
+                <div class="input-wrap">
+
+                    <label for="d2">
+                        <h2>Краен датум или времетраење</h2>
+                        <p>Пресметај датум со додавање или одземање време. 
+                            <a class="mdl-launch" href="#" id="mdlO">Прикажи примери</a>
+                        </p>
+                    </label>
+
+                    <input id="d2" name="d2" placeholder="На пр. Утре, 30.12.2026, +10 дена, -50 години" value="" />
+                </div>
+
+                <noscript>
+                    <input class="submit" type="submit" value="Поднеси" />
+                </noscript>
+
+            </form>
+
+        </section>
+
+        <section>
+            <div class="result-header">
+                <h1 id="result1"></h1> <!-- Овој елемент ќе го прикаже резултатот (временската разлика) -->
+                <p id="sub"></p> <!-- Овој елемент ќе ги прикаже двата датума чија разлика е пресметана -->
+            </div>
+        </section>
+
+        <section>
+            <div class="result-formats hidden" id="otherSection">
+                <h2>Други временски формати</h2>
+                <ul id="otherList" class="subdued"></ul>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="mdl">
+        <button class="close" id="mdlX">×</button> <!-- Копчето X -->
+
+        <div class="wrap">
+            <div class="content">
+
+                <div class="header">
+                    <h1>Други Примери</h1>
+                </div>
+
+                <div class="body">
+                    <ul>
+                        <li>15.12.2025 (ден.месец.година)</li>
+                        <li>Ноември 15, 2025</li>
+                        <li>15 Ноември, 2025</li>
+                        <li>15 Ноември 2025</li>
+                        <li>Ноември 15 2025</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="bg"></div>
+        </div>
+    </div>
+</body>
+</html>
