@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<title>Тајмер за Одбројување</title>
+<meta charset=utf-8 />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Тајмер за одбројување">
+<meta name="keywords" content="одбројување, тајмер, датум">
+<meta name="author" content="Adapted from Russell Baylis, Sunmock Yang">
+<meta name="robots" content="index, follow">
+
+<link rel="stylesheet" href="untilmk.css">
+<script src="untilmk.js"></script>
+
+<button onclick="window.location.href='https:/steffeeee.github.io/Project-Date/indexmk.html'" class="top-left-btn">Назад</button>
+<div id="main-wrap" class="wrap">
+  <section>
+    <h1>Тајмер за Одбројување</h1>
+  </section>
+  
+  <section>
+    <form action="/">
+      <div class="input-wrap">
+        <label for="futureDate">
+          <h2>Иднински датум и време</h2>
+          <p>Внесете иднински датум и изберете време. <a class="mdl-launch hidden" href="#" id="mdlO">Примери</a></p>
+        </label>
+        <div class="date-time-input">
+          <input id="futureDate" name="futureDate" placeholder="Пр. 31.12.2025, Мај 1, 2025" />
+          <select id="hourSelect" name="hour">
+            <!-- Hours will be populated by JavaScript -->
+          </select>
+          <span style="font-weight: bold; font-size: 25px;">:</span>
+          <select id="minuteSelect" name="minute">
+            <!-- Minutes will be populated by JavaScript -->
+          </select>
+        </div>
+      </div>
+      <noscript>
+        <input class="submit" type="submit" value="Поднеси" />
+      </noscript>
+    </form>
+  </section>
+  
+  <section>
+    <div class="result-header">
+      <h1 id="result1">Внесете иднински датум...</h1>
+      <p id="sub">Преостанатото време ќе се појави овде</p>
+    </div>
+</section>
+<section>
+    <div class="result-formats hidden" id="otherSection">
+      <h2>Други временски формати</h2>
+      <ul id="otherList" class="subdued"></ul>
+    </div>
+  </section>
+</div>
+
+<div class="mdl">
+  <button class="close" id="mdlX">×</button>
+  <div class="wrap">
+    <div class="content">
+      <div class="header">
+        <h1>Примери за формати на датум</h1>
+      </div>
+      <div class="body">
+        <ul>
+          <li>31.12.2025</li>
+          <li>2025/12/31</li>
+          <li>Декември 31, 2025</li>
+          <li>Дек 31, 2025</li>
+          <li>Следен Божиќ</li>
+          <li>Утре</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bg"></div>
+  </div>
+</div>
