@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<title>Калкулатор за временски зони</title>
+<meta charset=utf-8 />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Калкулатор за временски зони">
+<meta name="keywords" content="време, временска зона, калкулатор">
+<meta name="author" content="Адаптирано од оригиналот на Russell Baylis, Sunmock Yang">
+<meta name="robots" content="index, follow">
+
+<link rel="stylesheet" href="timezonemk.css">
+<script src="timezonemk.js"></script>
+
+<button onclick="window.location.href='https:/steffeeee.github.io/Project/indexmk.html'" class="top-left-btn">Назад</button>
+<div id="main-wrap" class="wrap">
+  <section>
+    <h1>Калкулатор за временски зони</h1>
+  </section>
+  <section>
+    <form action="/">
+      <div class="input-wrap">
+        <label for="localtime">
+          <h2>Ваше локално време</h2>
+        </label>
+        <input id="localtime" name="localtime" readonly />
+      </div>
+      <div class="input-wrap">
+        <label for="capital">
+          <h2>Главен град</h2>
+          <p>Внесете главен град за да го видите неговото време. <a class="mdl-launch hidden" href="#" id="mdlO">Погледнете примери</a></p>
+        </label>
+        <input id="capital" name="capital" placeholder="Пр. Скопје, Лондон, Токио" />
+      </div>
+      <noscript>
+        <input class="submit" type="submit" value="Пресметај" />
+      </noscript>
+    </form>
+  </section>
+  <section>
+    <div class="result-header">
+      <h1 id="result1">Внесете главен град погоре</h1>
+      <p id="sub"></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="result-formats hidden" id="otherSection">
+      <h2>Дополнителни информации</h2>
+      <ul id="otherList" class="subdued"></ul>
+    </div>
+  </section>
+
+</div>
+<div class="mdl">
+  <button class="close" id="mdlX">×</button>
+  <div class="wrap">
+    <div class="content">
+      <div class="header">
+        <h1>Примери за главни градови</h1>
+      </div>
+      <div class="body">
+        <ul>
+          <li>Скопје</li>
+          <li>Лондон</li>
+          <li>Токио</li>
+          <li>Вашингтон</li>
+          <li>Париз</li>
+          <li>Пекинг</li>
+          <li>Москва</li>
+          <li>Канбера</li>
+          <li>Берлин</li>
+          <li>Рим</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bg"></div>
+  </div>
+</div>
