@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Калкулатор за Возраст</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="agecalcmk.css">
+    <script src="agecalcmk.js"></script>
+</head>
+<body>
+    <button onclick="window.location.href='https://steffeeee.github.io/Project/indexmk.html'" class="top-left-btn">Назад</button>
+    <!-- Main Content -->
+    <div class="wrap" id="main-wrap">
+        <section>
+            <h1>Калкулатор за Возраст</h1>
+        </section>
+
+        <section>
+            <!-- Input Form -->
+            <form action="/">
+                <div class="input-wrap">
+                    <label for="birthdate">
+                        <h2>Вашиот Роденден</h2>
+                        <p>Внесете го датумот на раѓање. <a class="mdl-launch" href="#" id="mdlO">Примери</a></p>
+                    </label>
+                    <input id="birthdate" placeholder="Пр. 15.12.2025, Ноември 15, 2025">
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <!-- Results -->
+            <div class="result-header">
+                <h1 id="result1">Внесете датум на раѓање...</h1>
+                <p id="sub"></p>
+            </div>
+        </section>
+        <section>
+            <div class="result-formats hidden" id="otherSection">
+                <h2>Други временски формати</h2>
+                <ul id="otherList" class="subdued"></ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal for Examples -->
+    <div class="mdl">
+        <button class="close" id="mdlX">×</button>
+        <div class="wrap">
+            <div class="content">
+                <h1>Примери за формати на датум</h1>
+                <ul>
+                    <li>15.12.2025</li>
+                    <li>Ноември 15, 2025</li>
+                    <li>Ноември 15 2025</li>
+                    <li>15 Ноември, 2025</li>
+                    <li>15 Ноември 2025</li>
+                </ul>
+            </div>
+            <div class="bg"></div>
+        </div>
+    </div>
+</body>
+</html>
